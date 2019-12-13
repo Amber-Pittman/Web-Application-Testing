@@ -6,7 +6,7 @@ export default function Display() {
     const [strikes, setStrikes] = useState(0);
     const [balls, setBalls] = useState(0);
     const [hits, setHits] = useState(0);
-    const [player, setPlayer]= useLocalStorage("Amber Pittman");
+    const [player, setPlayer]= useLocalStorage("");
 
     return (
         <div>
@@ -19,7 +19,7 @@ export default function Display() {
 
                 <Dashboard
                     setStrikes={setStrikes}
-                    strikes={strike}
+                    strikes={strikes}
                     balls={balls}
                     setBalls={setBalls}
                     hits={hits}
