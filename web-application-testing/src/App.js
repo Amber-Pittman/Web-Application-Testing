@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Display from "./Components/Display";
+import Display from "./Components/Display/Display";
 
 function App() {
     return (
