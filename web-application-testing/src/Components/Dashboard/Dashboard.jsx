@@ -27,6 +27,12 @@ export default function Dashboard ({
                 setPlayer("")
             )}
 
+            <button onClick={() => setHits(hits + 1)}>Add Hit</button>
+            {hits > 3 && (
+                setHits(0),
+                setPlayer("")
+            )}
+
             <button onClick={() => strikes < 2 ? setStrikes(strikes + 1) 
                 : setStrikes(strikes)}>Add Foul</button>
 
